@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Music Player - G</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="bg-gray-700 text-white">
+    <div class="container mx-auto">
+      <div class="flex justify-center">
+        <div class="w-full">
+          <!-- search bar for songs padding-4 margin-top-10 -->
+          <div class="flex justify-center">
+            <div class="w-full">
+              <input
+                id="search"
+                type="text"
+                class="mt-10 p-2 w-full bg-gray-800 text-white border-2 border-gray-700 rounded outline-none focus:border-purple-500"
+                placeholder="Search for a song..."
+              />
+            </div>
+          </div>
+          <!-- search results List with name thumb artist and song id -->
+
+          <div class="flex justify-center mt-4">
+            <div class="w-full" id="results">
+              <!-- each result should be a link to the song -->
+              <p class="text-center">Enter a query to search for a song</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/js/search.js"></script>
+  </body>
+</html>
