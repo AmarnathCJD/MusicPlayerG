@@ -5,6 +5,7 @@ import (
 	"main/util"
 )
 
+// Track is a struct that contains the metadata of a track and the download link
 type Track struct {
 	Success  bool `json:"success"`
 	Metadata struct {
@@ -17,6 +18,7 @@ type Track struct {
 	Link string `json:"link"`
 }
 
+// DownloadLink returns the download link of a track given the track URI from Spotify
 func DownloadLink(trackURI string) (*Track, error) {
 	headers := map[string]string{
 		"origin":  "https://spotifydown.com",

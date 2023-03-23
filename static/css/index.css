@@ -1,0 +1,44 @@
+
+.song__thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.song__info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.song:hover .song__info {
+  opacity: 1;
+}
+
+.song__info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.song__info h4 {
+  font-size: 1rem;
+}
+
+.song__info_title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.song__info_artist {
+  font-size: 1rem;
+}
