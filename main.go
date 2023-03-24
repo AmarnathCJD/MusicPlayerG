@@ -5,6 +5,7 @@ import (
 	"io"
 	"log"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -37,7 +38,7 @@ func main() {
 		w.Write(ReadBytes(resp.Body))
 	})
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
 }
 
 func ReadBytes(reader io.Reader) []byte {
